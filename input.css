@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@theme {
+  --color-vividBlue: #007aff;
+  --color-cloudWhite: #ebebeb;
+  --color-warmMustard: #f2b538;
+  --color-charcoalBlue: #1f1f30;
+  --color-tropicalCyan: #40bcd0;
+  --color-red: #255;
+}
+
+@layer utilities {
+  .btn-getStarted {
+    @apply inline-block bg-warmMustard text-charcoalBlue text-2xl rounded px-[40px] py-[14px];
+  }
+}
+
+@layer base{
+a{
+  @apply  text-warmMustard;
+}
+li{
+  @apply list-none;
+}
+}

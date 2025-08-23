@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body>
+    <!-- Nav bar -->
+    <!-- nav for larger screen -->
+    <nav class="bg-charcoalBlue px-6">
+      <div class="container w-[80%] mx-auto flex items-center justify-between">
+        <div>
+          <img
+            src="/assets/android-chrome-192x192.webp"
+            alt="logo"
+            class="w-[100px]"
+          />
+        </div>
+        <div class="hidden lg:block space-x-7">
+          <a href="#" class="text-cloudWhite font-bold">Music Distribution</a>
+          <a href="#" class="text-cloudWhite font-bold">CDB Boost</a>
+          <a href="#" class="text-cloudWhite font-bold">Pricing</a>
+          <a href="#" class="text-cloudWhite font-bold">Log In</a>
+          <a href="#" class="btn-getStarted mr-5">Get Started</a>
+        </div>
+
+        <!-- nav default -->
+        <input type="checkbox" id="menu-toggle" class="peer hidden" />
+        <label for="menu-toggle" class="block lg:hidden cursor-pointer">
+          <div class="text-tropicalCyan flex flex-col gap-1.5">
+            <span class="w-6 h-0.5 bg-tropicalCyan"></span>
+            <span class="w-6 h-0.5 bg-tropicalCyan"></span>
+            <span class="w-6 h-0.5 bg-tropicalCyan"></span>
+          </div>
+        </label>
+      </div>
+      <div class="peer-checked:block hidden">
+        <a href="" class="block">get started</a>
+        <a href="" class="inline-block btn-getStarted">Log in</a>
+        <a href="" class="block">Music Distribution</a>
+        <a href="" class="block">CDB Boost</a>
+        <a href="" class="block">Promote Your Music</a>
+        <a href="" class="block">Pricing</a>
+      </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="relative h-[70vh]">
+      <div class="">
+        <video
+          id="bgvid"
+          class="relative z-[-1]  min-w-[100%] min-h-[100%] "
+          playsinline=""
+          autoplay=""
+          muted=""
+          loop=""
+          poster="https://cdbaby.com/wp-content/uploads/2024/07/homepage-bg-video-thumb.jpg"
+        >
+          <source
+            data-src="https://cdbaby.com/wp-content/uploads/2023/02/CDB_Homepage_0223_HeroBackgroundVideo_03.mp4"
+            type="video/mp4"
+            src="https://cdbaby.com/wp-content/uploads/2023/02/CDB_Homepage_0223_HeroBackgroundVideo_03.mp4"
+          />
+        </video>
+      </div>
+      <div class="container w-[80%] mx-auto flex justify-center lg:block">
+        <div
+          class="flex flex-col justify-center items-center lg:items-start lg:text-start text-center absolute top-0 pt-5"
+        >
+          <h1 class="text-5xl lg:text-7xl font-bold text-warmMustard mb-5">
+            <span class="block">Your music</span>
+            <span class="block">deserves to be heard.</span>
+          </h1>
+          <div class="text-2xl lg:text-4xl text-cloudWhite">
+            <p>Distribute your music starting at</p>
+            <p>$9.99 per release.</p>
+            <p>No annul subscription fees.</p>
+          </div>
+          <a href="#" class="btn-getStarted text-center w-[300px] mt-5"
+            >Get Started</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Distribute -->
+    <section class="bg-[url(/assets/blue_paper_bg.jpg)] px-5 py-16">
+      <div class="flex flex-col items-center text-center">
+        <p class="text-6xl font-bold text-cloudWhite mb-5">
+          Distribute your music
+        </p>
+        <p class="text-3xl uppercase text-warmMustard mb-10">
+          worldwide to 150+ top platforms
+        </p>
+        <div class="px-5">
+          <img src="/assets/brands-dsk.webp" class="hidden md:block" alt="" />
+          <img src="/assets/brands-mbl.webp" class="md:hidden" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- How to -->
+    <section class="py-[100px] bg-[url(/assets/blue-gradient-bg.jpg)] bg-cover">
+      <div class="container p-5 mx-auto">
+        <h2
+          class="text-center text-[14px] tracking-wide text-cloudWhite uppercase font-medium mb-[40px]"
+        >
+          how to distribute
+
+          <span class="block normal-case text-4xl font-bold text-warmMustard"
+            >with CD Baby</span
+          >
+        </h2>
+        <!-- grid col 2 -->
+        <div class="container text-warmMustard mb-10 grid md:grid-cols-2">
+          <!-- card1 -->
+          <div
+            class="container flex flex-col items-center text-center py-5 md:p-2 gap-5"
+          >
+            <img
+              src="/assets/how-to/create.webp"
+              alt="icon"
+              class="w-[45px] h-[45px]"
+            />
+            <h3 class="text-2xl font-bold mb-[5px]">
+              1. Create a CD Baby acccount
+            </h3>
+            <p class="text-cloudWhite text-xl mb-5">to begin your release.</p>
+          </div>
+          <!-- card2 -->
+          <div
+            class="container flex flex-col items-center text-center py-5 md:p-2"
+          >
+            <img
+              src="/assets/how-to/track.webp"
+              alt="icon"
+              class="w-[45px] h-[45px]"
+            />
+            <h3 class="text-2xl font-bold mb-[5px]">2. Upload your tracks</h3>
+            <p class="text-cloudWhite text-xl mb-5">
+              cover art and metadata. Choose your release date and then submit.
+            </p>
+          </div>
+          <!-- card3 -->
+          <div
+            class="container flex flex-col items-center text-center py-5 md:p-2"
+          >
+            <img
+              src="/assets/how-to/reviews.webp"
+              alt="icon"
+              class="w-[45px] h-[45px]"
+            />
+            <h3 class="text-2xl font-bold mb-[5px]">
+              3. Our expert team reviews
+            </h3>
+            <p class="text-cloudWhite text-xl mb-5">to begin your release</p>
+          </div>
+          <!-- card4 -->
+          <div
+            class="container flex flex-col items-center text-center py-5 md:p-2"
+          >
+            <img
+              src="/assets/how-to/upload.webp"
+              alt="icon"
+              class="w-[45px] h-[45px]"
+            />
+            <h3 class="text-2xl font-bold mb-[5px]">
+              4. Track your streams and grow
+            </h3>
+            <p class="text-cloudWhite text-xl mb-5">
+              your audience. CD Baby gets you paid for every stream and
+              download.
+            </p>
+          </div>
+        </div>
+        <div class="container flex justify-center">
+          <a class="btn-getStarted">Get Started</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why -->
+    <section class="bg-[url(/assets/why-section.jpg)] py-[100px]">
+      <div class="container w-[80%] mx-auto text-center">
+        <h2 class="font-bold text-6xl text-warmMustard mb-14">Why CD Baby?</h2>
+        <div
+          class="flex flex-col items-center md:flex-row md:justify-center md:flex-wrap gap-10 mb-10"
+        >
+          <!-- item1 -->
+          <div class="w-[300px] flex flex-col items-center md:px-8 py-3 gap-5">
+            <img
+              src="/assets/why-s/dollar-300x120.webp"
+              class="max-h-14 max-w-24"
+              alt=""
+            />
+            <h3 class="text-warmMustard text-4xl font-medium">
+              One-time payment per release
+            </h3>
+            <p class="text-cloudWhite text-2xl">
+              We believe in simple pricing: only $9.99 per single or $14.99 per
+              album, with no annual fees or hidden costs.
+            </p>
+          </div>
+          <!-- item2 -->
+          <div class="w-[300px] flex flex-col items-center md:px-8 py-3 gap-5">
+            <img
+              src="/assets/why-s/graph.webp"
+              class="max-h-14 max-w-24"
+              alt=""
+            />
+            <h3 class="text-warmMustard text-4xl font-medium">
+              Invested in your success
+            </h3>
+            <p class="text-cloudWhite text-2xl">
+              After your music release, we only make money when you make money.
+              And when you do, you keep over 90%.
+            </p>
+          </div>
+          <!-- item3 -->
+          <div class="w-[300px] flex flex-col items-center md:px-8 py-3 gap-5">
+            <img
+              src="/assets/why-s/Notes.webp"
+              class="max-h-14 max-w-24"
+              alt=""
+            />
+            <h3 class="text-warmMustard text-4xl font-medium">
+              Built by musicians, for musicians
+            </h3>
+            <p class="text-cloudWhite text-2xl">
+              Since 1998, CD Baby has paid over $1 billion to independent
+              artists.
+            </p>
+          </div>
+        </div>
+        <a href="#" class="btn-getStarted">Get Started</a>
+      </div>
+    </section>
+
+    <!-- Subscribe -->
+    <!-- About -->
+    <!-- Socials-->
+
+    <section>
+      <div class="mx-auto text-center bg-tropicalCyan py-8">
+        <div
+          class="container w-[60%] mx-auto flex justify-between items-center"
+        >
+          <a href="#"
+            ><img src="/assets/footer/footer_ig.svg" class="w-[60px]" alt=""
+          /></a>
+          <a href="#"
+            ><img
+              src="/assets/footer/social-icon-youtube.svg"
+              class="w-[60px]"
+              alt=""
+          /></a>
+          <a href="#"
+            ><img
+              src="/assets/footer/social-icon-threads.svg"
+              class="w-[60px]"
+              alt=""
+          /></a>
+          <a href="#"
+            ><img
+              src="/assets/footer/footer_tiktok.svg"
+              class="w-[60px]"
+              alt=""
+          /></a>
+          <a href="#"
+            ><img src="/assets/footer/footer_fb.svg" class="w-[60px]" alt=""
+          /></a>
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <footer class="flex flex-wrap lg:flex-nowrap lg:gap-8 bg-[#2a2a2a]">
+      <div class="w-full lg:w-1/2">
+        <div class="flex justify-center my-6">
+          <img src="/assets/CDB_Logo_BlueSmall.svg" class="h-[60px]" />
+        </div>
+      </div>
+      <div class="w-1/2">
+        <div class="flex flex-col items-center lg:items-start my-10">
+          <h2 class="uppercase font-bold text-cloudWhite">company info</h2>
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Brand Guidelines</a></li>
+          <li><a href="#">Sitemap</a></li>
+          <li><a href="#">Downtown Music</a></li>
+        </div>
+      </div>
+      <div class="w-1/2">
+        <div class="flex flex-col items-center lg:items-start my-10">
+          <h2 class="uppercase font-bold text-cloudWhite">CD Baby Brands</h2>
+          <li><a href="#">Showco</a></li>
+          <li><a href="#">HearNow</a></li>
+          <li><a href="#">CD Baby Disc Manufacturing</a></li>
+          <li><a href="#">CD Baby Download Portal</a></li>
+        </div>
+      </div>
+      <div class="w-1/2">
+        <div class="flex flex-col items-center lg:items-start my-10">
+          <h2 class="uppercase font-bold text-cloudWhite">
+            Promotion Resources
+          </h2>
+          <li><a href="#">Promote Your Music</a></li>
+          <li><a href="#">DIY Musician Blog</a></li>
+          <li><a href="#">DIY Musician Podcast</a></li>
+          <li><a href="#">Free Musician Guides</a></li>
+          <li><a href="#">CD Baby Stages</a></li>
+        </div>
+      </div>
+      <div class="w-1/2">
+        <div class="flex flex-col items-center lg:items-start my-10">
+          <h2 class="uppercase font-bold text-cloudWhite">Legal</h2>
+          <li><a href="#">Artist Agreement</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Reporting Infringement</a></li>
+          <li><a href="#">Legal Agreements</a></li>
+        </div>
+      </div>
+      <div class="container lg:hidden text-center mx-auto my-5">
+        <a href="#" class="text-tropicalCyan"
+          >Do Not Sell or Share My Personal Information</a
+        >
+      </div>
+    </footer>
+  </body>
+</html>
