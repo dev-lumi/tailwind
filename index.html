@@ -4,7 +4,32 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="output.css" />
+        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+      @theme {
+       --color-vividBlue: #007aff;
+  --color-cloudWhite: #ebebeb;
+  --color-warmMustard: #f2b538;
+  --color-charcoalBlue: #1f1f30;
+  --color-tropicalCyan: #40bcd0;
+  --color-red: #543;
+      }
+
+      @layer utilities {
+  .btn-getStarted {
+    @apply inline-block bg-warmMustard text-charcoalBlue text-2xl rounded px-[40px] py-[14px];
+  }
+}
+
+@layer base{
+a{
+  @apply  text-warmMustard;
+}
+li{
+  @apply list-none;
+}
+}
+    </style>
   </head>
   <body>
     <section class="bg-[url(https://cdbaby.com/wp-content/themes/cdbaby_theme/assets/images/spotify-25/blue_paper_bg.jpg)] px-5 py-16">
@@ -23,6 +48,7 @@
     </section>
   </body>
 </html>
+
 
 
 
