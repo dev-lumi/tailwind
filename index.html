@@ -5,34 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>tailwind | sample Project</title>
     <!-- <link rel="stylesheet" href="output.css" /> -->
-      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
       @theme {
-       --color-vividBlue: #007aff;
-  --color-cloudWhite: #ebebeb;
-  --color-warmMustard: #f2b538;
-  --color-charcoalBlue: #1f1f30;
-  --color-tropicalCyan: #40bcd0;
-  --color-red: #543;
+        --color-vividBlue: #007aff;
+        --color-cloudWhite: #ebebeb;
+        --color-warmMustard: #f2b538;
+        --color-charcoalBlue: #1f1f30;
+        --color-tropicalCyan: #40bcd0;
+        --color-red: #543;
       }
 
       @layer utilities {
-  .btn-getStarted {
-    @apply inline-block bg-warmMustard text-charcoalBlue text-2xl rounded px-[40px] py-[14px];
-  }
-}
+        .btn-getStarted {
+          @apply inline-block bg-warmMustard text-charcoalBlue text-2xl rounded px-[40px] py-[14px];
+        }
+      }
 
-@layer base{
-a{
-  @apply  text-warmMustard;
-}
-li{
-  @apply list-none;
-}
-}
+      @layer base {
+        a {
+          @apply text-warmMustard;
+        }
+        li {
+          @apply list-none;
+        }
+      }
     </style>
-
-
   </head>
   <body>
     <!-- Nav bar -->
@@ -41,7 +39,7 @@ li{
       <div class="container w-[80%] mx-auto flex items-center justify-between">
         <div>
           <img
-            src="./assets/android-chrome-192x192.webp"
+            src="/assets/android-chrome-192x192.webp"
             alt="logo"
             class="w-[100px]"
           />
@@ -82,12 +80,12 @@ li{
         class="container w-[90%] mx-auto px-[15px] flex flex-col items-center lg:items-start text-center lg:text-start"
       >
         <h1
-          class="text-warmMustard font-bold text-[68px] md:text-[72px] lg:text-[74px] mb-5 leading-none"
+          class="text-warmMustard font-bold text-[55px] md:text-[72px] lg:text-[74px] mb-5 leading-none"
         >
-          Your music <br />
+          Your music <br/>
           deserves to be heard.
         </h1>
-        <p class="text-2xl md:text-3xl lg:text-[32px] text-cloudWhite">
+        <p class="text-xl md:text-3xl lg:text-[32px] text-cloudWhite">
           Distribute your music starting at <br />
           $9.99 per release <br />
           No annual subscription fees.
@@ -97,7 +95,7 @@ li{
 
       <video
         id="bgvid_device"
-        class="absolute z-[-1] min-h-[100%] min-w-[100%]"
+        class="hidden md:block absolute z-[-1] min-h-[100%] min-w-[100%] bg-cover"
         playsinline=""
         autoplay=""
         muted=""
@@ -111,10 +109,26 @@ li{
         />
       </video>
 
+
+      <video
+        id="bgvid_device"
+          class="md:hidden absolute z-[-1] min-h-[100%] min-w-[100%] bg-cover"
+        playsinline=""
+        autoplay=""
+        muted=""
+        loop=""
+        poster="https://cdbaby.com/wp-content/uploads/2024/07/homepage-bg-video-thumb.jpg"
+      >
+        <source
+          data-src="https://cdbaby.com/wp-content/uploads/2024/07/CDB_Homepage_0223_HeroBackgroundVideo_mobile_1.mp4"
+          type="video/mp4"
+          src="https://cdbaby.com/wp-content/uploads/2024/07/CDB_Homepage_0223_HeroBackgroundVideo_mobile_1.mp4"
+        />
+      </video>
     </section>
 
     <!-- Distribute -->
-    <section class="bg-[url(./assets/blue_paper_bg.jpg)] px-5 py-16">
+    <section class="bg-[url(/assets/blue_paper_bg.jpg)] px-5 py-16">
       <div class="flex flex-col items-center text-center">
         <p class="text-6xl font-bold text-cloudWhite mb-5">
           Distribute your music
@@ -123,14 +137,14 @@ li{
           worldwide to 150+ top platforms
         </p>
         <div class="px-5">
-          <img src="./assets/brands-dsk.webp" class="hidden md:block" alt="" />
-          <img src="./assets/brands-mbl.webp" class="md:hidden" alt="" />
+          <img src="/assets/brands-dsk.webp" class="hidden md:block" alt="" />
+          <img src="/assets/brands-mbl.webp" class="md:hidden" alt="" />
         </div>
       </div>
     </section>
 
     <!-- How to -->
-    <section class="py-[100px] bg-[url(./assets/blue-gradient-bg.jpg)] bg-cover">
+    <section class="py-[100px] bg-[url(/assets/blue-gradient-bg.jpg)] bg-cover">
       <div class="container p-5 mx-auto">
         <h2
           class="text-center text-[14px] tracking-wide text-cloudWhite uppercase font-medium mb-[40px]"
@@ -148,7 +162,7 @@ li{
             class="container flex flex-col items-center text-center py-5 md:p-2 gap-5"
           >
             <img
-              src="./assets/how-to/create.webp"
+              src="/assets/how-to/create.webp"
               alt="icon"
               class="w-[45px] h-[45px]"
             />
@@ -162,7 +176,7 @@ li{
             class="container flex flex-col items-center text-center py-5 md:p-2"
           >
             <img
-              src="./assets/how-to/track.webp"
+              src="/assets/how-to/track.webp"
               alt="icon"
               class="w-[45px] h-[45px]"
             />
@@ -176,7 +190,7 @@ li{
             class="container flex flex-col items-center text-center py-5 md:p-2"
           >
             <img
-              src="./assets/how-to/reviews.webp"
+              src="/assets/how-to/reviews.webp"
               alt="icon"
               class="w-[45px] h-[45px]"
             />
@@ -190,7 +204,7 @@ li{
             class="container flex flex-col items-center text-center py-5 md:p-2"
           >
             <img
-              src="./assets/how-to/upload.webp"
+              src="/assets/how-to/upload.webp"
               alt="icon"
               class="w-[45px] h-[45px]"
             />
@@ -210,8 +224,7 @@ li{
     </section>
 
     <!-- Why -->
-    <section class="bg-[url(./assets/why-section.jpg)] py-[100px]">
-      
+    <section class="bg-[url(/assets/why-section.jpg)] py-[100px]">
       <div class="container w-[80%] mx-auto text-center">
         <h2 class="font-bold text-6xl text-warmMustard mb-14">Why CD Baby?</h2>
         <div
@@ -220,7 +233,7 @@ li{
           <!-- item1 -->
           <div class="w-[300px] flex flex-col items-center md:px-8 py-3 gap-5">
             <img
-              src="./assets/why-s/dollar-300x120.webp"
+              src="/assets/why-s/dollar-300x120.webp"
               class="max-h-14 max-w-24"
               alt=""
             />
@@ -235,7 +248,7 @@ li{
           <!-- item2 -->
           <div class="w-[300px] flex flex-col items-center md:px-8 py-3 gap-5">
             <img
-              src="./assets/why-s/graph.webp"
+              src="/assets/why-s/graph.webp"
               class="max-h-14 max-w-24"
               alt=""
             />
@@ -250,7 +263,7 @@ li{
           <!-- item3 -->
           <div class="w-[300px] flex flex-col items-center md:px-8 py-3 gap-5">
             <img
-              src="./assets/why-s/Notes.webp"
+              src="/assets/why-s/Notes.webp"
               class="max-h-14 max-w-24"
               alt=""
             />
@@ -268,11 +281,9 @@ li{
     </section>
 
     <!-- Subscribe -->
-     
+
     <!-- About -->
 
-
-    
     <!-- Socials-->
 
     <section>
@@ -281,28 +292,28 @@ li{
           class="container w-[60%] mx-auto flex justify-between items-center"
         >
           <a href="#"
-            ><img src="./assets/footer/footer_ig.svg" class="w-[60px]" alt=""
+            ><img src="/assets/footer/footer_ig.svg" class="w-[60px]" alt=""
           /></a>
           <a href="#"
             ><img
-              src="./assets/footer/social-icon-youtube.svg"
+              src="/assets/footer/social-icon-youtube.svg"
               class="w-[60px]"
               alt=""
           /></a>
           <a href="#"
             ><img
-              src="./assets/footer/social-icon-threads.svg"
+              src="/assets/footer/social-icon-threads.svg"
               class="w-[60px]"
               alt=""
           /></a>
           <a href="#"
             ><img
-              src="./assets/footer/footer_tiktok.svg"
+              src="/assets/footer/footer_tiktok.svg"
               class="w-[60px]"
               alt=""
           /></a>
           <a href="#"
-            ><img src="./assets/footer/footer_fb.svg" class="w-[60px]" alt=""
+            ><img src="/assets/footer/footer_fb.svg" class="w-[60px]" alt=""
           /></a>
         </div>
       </div>
@@ -311,7 +322,7 @@ li{
     <footer class="flex flex-wrap lg:flex-nowrap lg:gap-8 bg-[#2a2a2a]">
       <div class="w-full lg:w-1/2">
         <div class="flex justify-center my-6">
-          <img src="./assets/CDB_Logo_BlueSmall.svg" class="h-[60px]" />
+          <img src="/assets/CDB_Logo_BlueSmall.svg" class="h-[60px]" />
         </div>
       </div>
       <div class="w-1/2">
@@ -366,5 +377,3 @@ li{
     </footer>
   </body>
 </html>
-
-
